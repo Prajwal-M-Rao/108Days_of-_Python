@@ -1,0 +1,8 @@
+def gcd_euclidean(n1, n2):
+    if n1 == 0:
+        return n2
+    return gcd_euclidean(n2 % n1, n1)
+
+n1 = int(input("Enter first number: "))
+n2 = int(input("Enter second number: "))
+print("The HCF is", gcd_euclidean(n1, n2))
